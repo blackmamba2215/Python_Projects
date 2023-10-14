@@ -24,18 +24,19 @@ class Weather_API():
                       'forecast':{}}
 
         for day in self.response['forecast']['forecastday'].keys():
-            dict_needed_Data_hourly = {
-            'temp_c':'',
-            'temp_f':'',
-            'localtime':'',
-            'is_day':'',
-            'feelslike_c':'',
-            'feelslike_f':'',
-            'humidity': '',
-            'precip_mm': '',
-            'chance_of_rain':'',
-            'chance_of_snow':''
-        }
+            list_needed_Data_hour = [
+                'temp_c',
+                'temp_f',
+                'localtime',
+                'is_day',
+                'feelslike_c',
+                'feelslike_f',
+                'humidity',
+                'precip_mm',
+                'chance_of_rain',
+                'chance_of_snow'
+                ]
+            
             day_Data = {'date':day['date'], 'average':{}, 'hourly':{}, 'astro':{}}
 
 
