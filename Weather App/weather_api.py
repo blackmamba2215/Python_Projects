@@ -5,7 +5,7 @@ class Weather_API():
     def __init__(self) -> None:
         self.url = "https://weatherapi-com.p.rapidapi.com/forecast.json"
         self.headers = {
-            "X-RapidAPI-Key": "616da7c131mshf336e524cc759e2p119c85jsn5b120f1b5e7d",
+            "X-RapidAPI-Key": "your_key",
             "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com"
         }
         self.response = {}
