@@ -8,5 +8,7 @@ def get_input_data():
 
     with open(os.path.join(project_root, 'input.txt'), 'r') as file:
         lines = file.readlines()
+
+    content = [line.strip() for line in lines]
         
-    return lines
+    return content
